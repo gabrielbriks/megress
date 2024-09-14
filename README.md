@@ -9,3 +9,5 @@
   - Drizzle Kit(dev-dependence)
 - BiomeJS
 - Docker
+- Postgres(dependence & DB)
+- @paralleldrive/cuid2

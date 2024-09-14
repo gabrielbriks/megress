@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx --env-file .env watch src/http/server.ts"
+    "dev": "tsx --env-file .env watch src/http/server.ts",
+    "g-migration": "npx drizzle-kit generate",
+    "migrate": "npx drizzle-kit migrate"
   },
   "author": "Gabriel Morais",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
     "drizzle-orm": "^0.33.0",
     "fastify": "^4.28.1",
+    "postgres": "^3.4.4",
     "zod": "^3.23.8"
   },
   "devDependencies": {
