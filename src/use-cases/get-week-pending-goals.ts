@@ -55,7 +55,6 @@ export async function getWeekPendingGoals() {
         sql /*sql*/`COALESCE(${goalsCompletionCounts.completionCount}, 0)`.mapWith(
           Number
         ), //[COALESCE]Como se fosse um IF(Ex: no SLQServer seria ISNULL(column, 0))
-      createdAt: goalsCreatedUpToWeek.createdAt,
     })
     .from(goalsCreatedUpToWeek)
     .leftJoin(
